@@ -5,6 +5,7 @@ from pathlib import Path
 REPO_DIR = "store/repo"
 
 def clone_repo(url):
+    url = url.rstrip('#')  # Remove trailing # if present
     subprocess.run(
         ["git", "clone", url, REPO_DIR],
         check=True
