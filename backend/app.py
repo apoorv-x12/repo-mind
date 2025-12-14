@@ -1,3 +1,4 @@
+# pylint: disable=import-error
 # backend/app.py
 from fastapi import FastAPI
 from ingest import clone_repo, collect_files

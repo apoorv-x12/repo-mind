@@ -2,6 +2,8 @@
 # backend/llm.py
 from groq import Groq
 import os
+import dotenv
+dotenv.load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
